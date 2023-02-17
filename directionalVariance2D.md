@@ -3,46 +3,30 @@
 Calculates the local 2D fiber orientation statistics
 
 ---
----
-&nbsp;
 
 ## Syntax
-
----
 
 `dv = directionalVariance2D(theta, magnitude, kernelSize)`
 
 `[dv, localTheta, localDensity] = directionalVariance2D(theta, magnitude, kernelSize)`
 
 ---
----
-&nbsp;
 
 ## Description
-
----
 
 [dv](#dv) = directionalVariance2D([theta](#theta), [magnitude](#magnitude), [kernelSize](#kernelsize)) computes a pixel-wise map of local directional variance (dv), based on the pixel-wise map of 2D fiber orientation (theta), and a mask of collagen-positive pixels (magnitude). The amount of local values used during the calculation is dependent on the size of the kernel used (kernelSize).
 
 [[dv](#dv), [localTheta](#localtheta), [localDensity](#localdensity)] = directionalVariance2D( ___ ) outputs additional local fiber statistics.
 
 ---
----
-&nbsp;
 
 ## Examples
-
----
 
 Please see the documentation for `calcfibang2D` for a full example.
 
 ---
----
-&nbsp;
 
 ## Input Arguments
-
----
 
 ## theta
 
@@ -63,12 +47,8 @@ Size of the local region (in pixels) for computing local fiber orientation stati
 *Data types: `single` | `double`*
 
 ---
----
-&nbsp;
 
 ## Output Arguments
-
----
 
 ## dv
 
@@ -90,7 +70,6 @@ Map of local collagen fiber density, computed as the local sum of pixels within 
 
 *Data types: `single`*
 
----
 ---
 
 ## [Return to top](#directionalvariance2d)

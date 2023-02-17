@@ -3,32 +3,20 @@
 Calculates a 2D fiber orientation map
 
 ---
----
-&nbsp;
 
 ## Syntax
-
----
 
 `orientImage = calcfibang2D(img, kernelSize, filt_on)`
 
 ---
----
-&nbsp;
 
 ## Description
-
----
 
 [orientImage](#orientimage) = calcfibang2D([img](#img), [kernelSize](#kernelsize), [filt_on](#filt_on)) returns the pixel-wise 2D fiber orientation map (orientImage) for an input image (image) based on differences in a local area, dictated by kernelSize. The input image can also be blurred during function execution via the filt_on input.
 
 ---
----
-&nbsp;
 
 ## Examples
-
----
 
 ## **Analysis of collagen SHG image**
 
@@ -78,12 +66,8 @@ set(gca,'Color',[0 0 0]);
 ![figure_1_4](./documentation/calcfibang2D/figure_1_4.png)
 
 ---
----
-&nbsp;
 
 ## Input Arguments
-
----
 
 ## img
 
@@ -104,12 +88,8 @@ Logical true or false value for specifying if gaussian blur filter is desired.
 *Data types: `logical`*
 
 ---
----
-&nbsp;
 
 ## Output Arguments
-
----
 
 ## orientImage
 
@@ -118,18 +98,13 @@ Pixel-wise map of calculated fiber orientation. Fiber orientations will range be
 *Data types: `single` | `double`*
 
 ---
----
-&nbsp;
 
 ## More About
-
----
 
 ## *Weighted vector summation algorithm*
 
 For more information on the algorithm used, please read the published article found [here](https://doi.org/10.1117/1.JBO.18.4.046003).
 
----
 ---
 
 ## [Return to top](#calcfibang2d)
