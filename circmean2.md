@@ -99,23 +99,23 @@ Standard deviation of all input angles.
 
 To calculate the mean direction, the axial data (spanning over 180 degrees) must first be converted to circular data (spanning 360 degrees). The weighted average X ($\bar{C}$) and Y ($\bar{S}$) components can then be calculated:
 
-$\bar{C} = \sum_{i=1}^{n} {w_i * cos(2\theta_i)}$
+$$\bar{C} = \sum_{i=1}^{n} {w_i * cos(2\theta_i)}$$
 
-$\bar{S} = \sum_{i=1}^{n} {w_i * sin(2\theta_i)}$
+$$\bar{S} = \sum_{i=1}^{n} {w_i * sin(2\theta_i)}$$
 
 Next, the mean direction ($\bar{\theta}$) can be calculated using `atan2`:
 
-$\bar{\theta} = atan2(\bar{S},\bar{C})/2 $
+$$\bar{\theta} = atan2(\bar{S},\bar{C})/2$$
 
 ## *Directional Variance*
 
 To calculate a directional variance, first the resultant length ($\bar{R}$) for all vectors must be calculated:
 
-$\bar{R} = \frac{\sqrt{\bar{C}^2 + \bar{S}^2 }} {\sum_{i=1}^{n} {w_i}}$
+$$\bar{R} = \frac{\sqrt{\bar{C}^2 + \bar{S}^2 }} {\sum_{i=1}^{n} {w_i}}$$
 
 Then directional variance ($V$) can be calculated as:
 
-$V = 1 - \bar{R}$
+$$V = 1 - \bar{R}$$
 
 ---
 
